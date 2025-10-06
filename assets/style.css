@@ -1,0 +1,112 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  background: linear-gradient(to bottom, #eafaf1, #c5f0d5);
+  background-image: url('https://trackandturf.com/wp-content/uploads/2023/10/soccer-ball-in-center-of-turf-field.jpg'); /* optional football grass background */
+  background-size: cover;
+  background-attachment: fixed;
+  color: #222;
+}
+
+h1, h2 {
+  color: #155724;
+  text-shadow: 1px 1px #c3e6cb;
+}
+
+a {
+  display: inline-block;
+  margin: 10px;
+  text-decoration: none;
+  background: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+a:hover {
+  background: #218838;
+}
+
+form {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  max-width: 400px;
+}
+
+form input, form select {
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+form button {
+  padding: 12px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+form button:hover {
+  background: #0056b3;
+}
+
+
+.navbar {
+  background-color: #19692c; /* Darker green for contrast */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  margin-bottom: 20px;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0 15px;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  direction: rtl;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  display: block;
+  padding: 12px 18px;
+  color: #d4f4d7;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a:focus {
+  background-color: #28a745; /* Your bright green */
+  color: #fff;
+  outline: none;
+}
+
+@media (max-width: 480px) {
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar ul li a {
+    padding: 10px;
+    text-align: center;
+  }
+}
